@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Southern University College</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<script type="text/javascript" src="form.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<a href="https://www.southern.edu.my/home.html"><img src="form-suclogo.png"></a>
+			<h1>SUC Online Registration</h1>
+    </div>
+    <br>
+		<div class="instruction">
+			<div><strong style="font-size: large;">Instructions:</strong>
+			<ol>
+				<li>This form contains <strong>five</strong> (<strong>5</strong>) parts, please fill out this form before submission.</li>
+				<li>The required fields are marked in <strong>asterisk <span class="redMark">*</span></strong>.</li>
+				<li>Kindly please check and make sure contact informations are <strong>correct</strong>, our staff will use these information to get in touch with you.</li>
+				<li>No amendment is allowed after you submit your application.</li>
+      </ol>
+      </div>
+    </div>
+    <br>
+		<form name="registration" onsubmit="return formValidation()">
+			<div class="Form_1">
+				<div class="formHead">
+					<h2>1. Intake & Choices</h2>
+				</div>
+				<div class="formGroup">
+          <h3>Intake and Programme</h3>
+					<div class="flex">
+						<label for="intakeYear">Year/Intake<span class="redMark">*</span>:</label>
+						<div class="intakeChoice">
+              <input type="radio" name="intakeYear" value="2020/may">2020/MAY
+              <input type="radio" name="intakeYear" value="2020/sep">2020/SEP
+						</div>
+					</div>
+				</div>
+				<div class="formGroup">
+					<h3>Choice of Programme</h3>
+					<div class="flex">
+						<label for="firstChoice">1st Choice<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="firstChoice">
+								<option selected="" value="Default"></option>
+                  <option>IT</option>
+                  <option>Business</option>
+                  <option>Accounting</option>
+                  <option>Art & Design</option>
+                  <option>English</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="secondChoice">2nd Choice<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="secondChoice">
+                <option selected="" value="Default"></option>
+                <option>IT</option>
+                <option>Business</option>
+                <option>Accounting</option>
+                <option>Art & Design</option>
+                <option>English</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="thirdChoice">3rd Choice<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="thirdChoice">
+                <option selected="" value="Default"></option>
+                <option>IT</option>
+                <option>Business</option>
+                <option>Accounting</option>
+                <option>Art & Design</option>
+                <option>English</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="formGroup">
+					<h3>Hostel Application</h3>
+					<div class="flex">
+						<label for="Choose">Choose<span class="redMark">*</span>:</label>
+						<div class="hostelChoice">
+							<input type="radio" name="yhostel" value="yes">Yes
+							<input type="radio" name="nhostel" value="no">No
+						</div>
+					</div>
+				</div>
+				<div class="formFoot">
+					<h3>Scholarship Application</h3>
+					<div class="flex">
+						<label for="scholarship">Choose<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="scholarship">
+								<option selected="" value="None">None</option>
+                                    <option value="Deg_S">Degree Scholarship</option>
+                                    <option value="Dip_S">Diploma Scholarship</option>
+                                    <option value="Fou_S">Foundation Scholarship</option>
+                                    <option value="Exco_S">Excellent Co-curriculum Scholarship</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Form_2">
+				<div class="formHead">
+					<h2>2. Personal Information</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="chineseName">Chinese Name:</label>
+						<div class="blank">
+							<input type="text" name="chineseName">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="englishName">English Name<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="englishName">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="gender">Gender<span class="redMark">*</span>:</label>
+						<div class="genderChoice">
+							<input type="radio" name="mgender" value="male">Male
+							<input type="radio" name="fgender" value="female">Female
+						</div>
+					</div>
+					<div class="flex">
+						<label for="dateOfBirth">Date of Birth<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="dateOfBirth" placeholder="dd-mm-yyyy">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="nationality">Nationality<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="nationality">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="identityNo">NRIC No./ Passport No.<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="identityNo">
+						</div>	
+					</div>
+					<div class="flex">
+						<label for="race">Race<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="race">
+								<option selected="" value="Default"></option>
+									<option value="Mal">Malay</option>
+									<option value="Chi">Chinese</option>
+									<option value="Ind">Indian</option>
+									<option value="Oth">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="religion">Religion<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="religion">
+								<option selected="" value="Default"></option>
+									<option value="None">None</option>
+									<option value="Bud">Buddhism</option>
+									<option value="Tao">Taoism</option>
+									<option value="Chr">Christianity</option>
+									<option value="Cat">Catholic</option>
+									<option value="Isl">Islam</option>
+									<option value="Hin">Hinduism</option>
+									<option value="Oth">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="homePhoneNumber">Home Phone Number:</label>
+						<div class="blank">
+							<input type="text" name="homePhoneNumber">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="mobileNumber">Mobile Number<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="mobileNumber">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="eMail">E-Mail<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="eMail">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="address">Address<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="address">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="area">Area<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="area">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="postcode">Postcode<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="postcode">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="state">State<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="state">
+								<option selected="" value="Default"></option>
+									<option value="Joh">Johor</option>
+									<option value="Ked">Kedah</option>
+									<option value="Kel">Kelantan</option>
+									<option value="Kl">Kuala Lumpur</option>
+									<option value="Lab">Labuan</option>
+									<option value="Mel">Melaka</option>
+									<option value="Sem">Negeri Sembilan</option>
+									<option value="Pah">Pahang</option>
+									<option value="Prk">Perak</option>
+									<option value="Per">Perlis</option>
+									<option value="Pen">Pulau Penang</option>
+									<option value="Put">Putra Jaya</option>
+									<option value="Sab">Sabah</option>
+									<option value="Sar">Sarawak</option>
+									<option value="Sel">Selangor</option>
+									<option value="Ter">Terengganu</option>
+                        	</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Form_3">
+				<div class="formHead">
+					<h2>3. Family Details</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="familyChineseName">Chinese Name:</label>
+						<div class="blank">
+							<input type="text" name="familyChineseName">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="familyEnglishName">English Name<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="familyEnglishName">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="familyIdentityNo">NRIC No./Passport No.<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="familyIdentityNo">
+						</div>	
+					</div>
+					<div class="flex">
+						<label for="phoneNumber">Phone Number<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="phoneNumber">
+						</div>
+					</div>
+					<div class="flex">
+						<label for="relationship">Relationship<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="relationship">
+								<option selected="" value="Default"></option>
+        	                        <option value="Pc">Parent-Child</option>
+                    	            <option value="Sib">Siblings</option>
+	                                <option value="Rel">Relatives</option>
+    	                            <option value="HnW">Husband and Wife</option>
+                            </select>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="income">Household Annual Income<span class="redMark">*</span>:</label>
+						<div class="selection">
+							<select name="income">
+								<option selected="" value="Default"></option>
+									<option value="0">Less than RM10, 000</option>
+    	          	<option value="10">RM 10, 000 to RM 29, 999</option>
+        	      	<option value="30">RM 30, 000 to RM 49, 999</option>
+            	  	<option value="50">RM 50, 000 to RM 69, 999</option>
+              		<option value="70">RM 70, 000 or more</option>
+            	</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Form_4">
+				<div class="formHead">
+					<h2>4. Academic Qualification</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="secondarySchool">Secondary School<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<div class="academic">
+								<input type="text" name="secondarySchoolPlace" placeholder="Institute state">
+							</div>
+							<div class="academic">
+								<input type="text" name="secondarySchoolName" placeholder="Institute name">
+							</div>
+							<div class="academic">
+								<input type="text" name="secondarySchoolYear" placeholder="Graduate year">
+							</div>
+						</div>
+					</div>
+					<div class="flex">
+						<label for="higherInstitution">Higher Institution:</label>
+						<div class="blank">
+							<div class="academic">
+								<input type="text" name="higherInstitutionPlace" placeholder="Institute state">
+							</div>
+							<div class="academic">
+								<input type="text" name="higherInstitutionName" placeholder="Institute name">
+							</div>
+							<div class="academic">
+								<input type="text" name="higherInstitutionYear" placeholder="Graduate year">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Form_5">
+				<div class="formHead">
+					<h2>5. Certificate & Grades</h2>
+				</div>
+				<div class="formContent">
+					<div class="flex">
+						<label for="certificate">Certificate<span class="redMark">*</span>:</label>
+						<div class="blank">
+							<input type="text" name="certificate" placeholder="UEC/ SPM/ STPM/ A-Level/ O-Level">
+						</div>
+					</div>
+					<div class="bestSubject">
+						<p style="font-size: large;"><strong>Your Best Five Subjects:</strong></p>
+						<div class="flex">
+							<label for="firstSubject">1st Subject<span class="redMark">*</span>:</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="firstSubjectName" placeholder="Subject name">
+								</div>
+								<div class="academic">
+									<input type="text" name="firstSubjectGrade" placeholder="Subject grade">
+								</div>
+							</div> 
+						</div>
+						<div class="flex">
+							<label for="secondSubject">2nd Subject<span class="redMark">*</span>:</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="secondSubjectName" placeholder="Subject name">
+								</div>
+								<div class="academic">
+									<input type="text" name="secondSubjectGrade" placeholder="Subject grade">
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<label for="thirdSubject">3rd Subject<span class="redMark">*</span>:</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="thirdSubjectName" placeholder="Subject name">
+								</div>
+								<div class="academic">
+									<input type="text" name="thirdSubjectGrade" placeholder="Subject grade">
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<label for="fourthSubject">4th Subject<span class="redMark">*</span>:</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="fourthSubjectName" placeholder="Subject name">
+								</div>
+								<div class="academic">
+									<input type="text" name="fourthSubjectGrade" placeholder="Subject grade">
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<label for="fifthSubject">5th Subject<span class="redMark">*</span>:</label>
+							<div class="blank">
+								<div class="academic">
+									<input type="text" name="fifthSubjectName" placeholder="Subject name">
+								</div>
+								<div class="academic">
+									<input type="text" name="fifthSubjectGrade" placeholder="Subject grade">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="SUBMIT" name="SUBMIT" value="SUBMIT">
+		</form>
+		<footer>
+			<div>
+				<strong>For further support:</strong><br>
+				<br>
+				Address: Jalan Selatan Utama, Off Jalan Skudai, 81300 Skudai, Johor<br>
+				E-mail: secretarial@sc.edu.my<br>
+				Call: +607 5586605
+			</div>
+			<div>
+				<strong>Powered By:</strong>
+				<img src="form-suclogo.png">
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+<script></script>
